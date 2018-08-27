@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * 标记为线程安全
  */
-@Target(ElementType.TYPE)
+@Target(value = {ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.SOURCE)
 public @interface ThreadSafe {
 
